@@ -191,7 +191,7 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "TogniEmanuele; Lab 2.2 4E ";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
