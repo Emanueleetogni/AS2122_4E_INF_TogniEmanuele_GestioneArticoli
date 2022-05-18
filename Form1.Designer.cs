@@ -39,7 +39,7 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
             this.cmbUnitaDiMisura = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAggiungi = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbScelta = new System.Windows.Forms.ComboBox();
             this.btnVisualizza = new System.Windows.Forms.Button();
             this.lstVisualizza = new System.Windows.Forms.ListBox();
             this.lblArticoli = new System.Windows.Forms.Label();
@@ -144,15 +144,15 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
             this.btnAggiungi.UseVisualStyleBackColor = true;
             this.btnAggiungi.Click += new System.EventHandler(this.btnAggiungi_Click);
             // 
-            // comboBox1
+            // cmbScelta
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbScelta.FormattingEnabled = true;
+            this.cmbScelta.Items.AddRange(new object[] {
             "Visualizza"});
-            this.comboBox1.Location = new System.Drawing.Point(403, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(251, 23);
-            this.comboBox1.TabIndex = 9;
+            this.cmbScelta.Location = new System.Drawing.Point(403, 32);
+            this.cmbScelta.Name = "cmbScelta";
+            this.cmbScelta.Size = new System.Drawing.Size(251, 23);
+            this.cmbScelta.TabIndex = 9;
             // 
             // btnVisualizza
             // 
@@ -162,6 +162,7 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
             this.btnVisualizza.TabIndex = 10;
             this.btnVisualizza.Text = "Visualizza";
             this.btnVisualizza.UseVisualStyleBackColor = true;
+            this.btnVisualizza.Click += new System.EventHandler(this.btnVisualizza_Click);
             // 
             // lstVisualizza
             // 
@@ -189,7 +190,7 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
             this.Controls.Add(this.lblArticoli);
             this.Controls.Add(this.lstVisualizza);
             this.Controls.Add(this.btnVisualizza);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbScelta);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "TogniEmanuele; Lab 2.2 4E ";
@@ -212,7 +213,7 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
         private System.Windows.Forms.ComboBox cmbUnitaDiMisura;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnAggiungi;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbScelta;
         private System.Windows.Forms.Button btnVisualizza;
         private System.Windows.Forms.ListBox lstVisualizza;
         private System.Windows.Forms.Label lblArticoli;

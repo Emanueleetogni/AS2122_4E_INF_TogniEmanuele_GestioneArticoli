@@ -28,5 +28,19 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
 
             lblArticoli.Text = $"Articoli({articoli.Count})";
         }
+
+        private void btnVisualizza_Click(object sender, EventArgs e)
+        {
+            lstVisualizza.Items.Clear();
+            switch (cmbScelta.Text)
+            {
+                case "Visualizza articoli":
+                    foreach(KeyValuePair<string, Articolo> kvp in articoli)
+                    {
+                        lstVisualizza.Items.Add(kvp.Value.Visualizzati());
+                    }
+                    break;
+            }
+        }
     }
 }

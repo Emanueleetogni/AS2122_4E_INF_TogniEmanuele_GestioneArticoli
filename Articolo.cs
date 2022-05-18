@@ -21,5 +21,10 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
         public string Descrizione { get { return descrizione; } }
         public string UnitaDiMisura { get { return unitaDiMisura; } }
         public double Prezzo { get { return prezzo; } }
+
+        public string Visualizzati()
+        {
+            return $"{Descrizione} {UnitaDiMisura} {Prezzo} ({codice})";
+        }
     }
 }
