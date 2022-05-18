@@ -1,5 +1,5 @@
 ﻿
-namespace c
+namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
 {
     partial class Form1
     {
@@ -172,6 +172,7 @@ namespace c
             this.lstVisualizza.Name = "lstVisualizza";
             this.lstVisualizza.Size = new System.Drawing.Size(358, 274);
             this.lstVisualizza.TabIndex = 11;
+            this.lstVisualizza.SelectedIndexChanged += new System.EventHandler(this.lstVisualizza_SelectedIndexChanged_1);
             // 
             // lblArticoli
             // 

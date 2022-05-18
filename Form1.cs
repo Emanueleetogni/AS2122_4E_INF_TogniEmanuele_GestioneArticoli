@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AS2122_4E_INF_TogniEmanuele_GestioneArticoli.Library;
-{
+
 
 namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
 {
@@ -45,6 +44,18 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
             }
         }
 
+        private void lstVisualizza_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            string curItem = lstVisualizza.SelectedItem.ToString();
 
+            // Find the string in ListBox.
+            int index = lstVisualizza.FindString(curItem);
+
+            // visualizzazione dettaglio articolo nei textbox/combo
+            // https://stackoverflow.com/questions/11000079/retrieve-dictionary-item-by-number
+            txtCodice.Text = articoli.ElementAt(index).Value.Codice;
+
+        }
     }
 }
+
