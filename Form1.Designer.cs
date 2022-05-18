@@ -142,6 +142,7 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
             this.btnAggiungi.TabIndex = 8;
             this.btnAggiungi.Text = "Aggiungi/modifica articolo";
             this.btnAggiungi.UseVisualStyleBackColor = true;
+            this.btnAggiungi.Click += new System.EventHandler(this.btnAggiungi_Click);
             // 
             // comboBox1
             // 

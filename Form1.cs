@@ -18,5 +18,15 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
             InitializeComponent();
             articoli = new Dictionary<string, Articolo>();
         }
+
+        private void btnAggiungi_Click(object sender, EventArgs e)
+        {
+            var a = new Articolo(txtCodice.Text, txtDescrizione.Text, cmbUnitaDiMisura.Text, Convert.ToDouble(txtPrezzo.Text));
+            if (articoli.ContainsKey(a.Codice))
+                articoli[a.Codice] = a;
+            else articoli.Add(a.Codice, a);
+
+            lblArticoli.Text = $"Articoli({articoli.Count})";
+        }
     }
 }
