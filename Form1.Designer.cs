@@ -1,5 +1,5 @@
 ﻿
-namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
+namespace c
 {
     partial class Form1
     {
@@ -148,7 +148,7 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
             // 
             this.cmbScelta.FormattingEnabled = true;
             this.cmbScelta.Items.AddRange(new object[] {
-            "Visualizza"});
+            "Visualizza articoli"});
             this.cmbScelta.Location = new System.Drawing.Point(403, 32);
             this.cmbScelta.Name = "cmbScelta";
             this.cmbScelta.Size = new System.Drawing.Size(251, 23);

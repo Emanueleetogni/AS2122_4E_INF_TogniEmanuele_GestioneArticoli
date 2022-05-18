@@ -6,4 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AS2122_4E_INF_TogniEmanuele_GestioneArticoli.Library\AS2122_4E_INF_TogniEmanuele_GestioneArticoli.Library.csproj" />
+  </ItemGroup>
+
 </Project>

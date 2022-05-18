@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AS2122_4E_INF_TogniEmanuele_GestioneArticoli.Library;
+{
 
 namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
 {
@@ -26,7 +28,7 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
                 articoli[a.Codice] = a;
             else articoli.Add(a.Codice, a);
 
-            lblArticoli.Text = $"Articoli({articoli.Count})";
+            lblArticoli.Text = $"Articoli ({articoli.Count})";
         }
 
         private void btnVisualizza_Click(object sender, EventArgs e)
@@ -42,5 +44,7 @@ namespace AS2122_4E_INF_TogniEmanuele_GestioneArticoli
                     break;
             }
         }
+
+
     }
 }
